@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="form">
+        <form onsubmit="signup(); return false">
+            <div class="divva">
+                <div>Name: <p><input required type="text" name="" id="name"></p>
+                </div>
+                <div>E-mail: <p><input required type="email" name="" id="email"></p>
+                </div>
+                <div>Password: <p><input required type="password" name="" id="pass"></p>
+                </div>
+                <div>Gender:<p><input type="text" required name="" id="gender"></p>
+                </div>
+                <div>Address:<p><input type="text" name="" required id="address"></p>
+                </div>
+                <div>City:<p><input type="text" name="" required id="city"></p>
+                </div>
+                <button>Sign-Up</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function signup() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let pass = document.getElementById('pass').value;
+            let gender = document.getElementById('gender').value;
+            let address = document.getElementById('address').value;
+            let city = document.getElementById('city').value;
+
+            let a = localStorage.setItem('name', name)
+            let b = localStorage.setItem('email', email)
+            let c = localStorage.setItem('pass', pass)
+            let d = localStorage.setItem('gender', gender)
+            let e = localStorage.setItem('address', address)
+            let f = localStorage.setItem('city', city)
+
+            window.location.href = "./login.html"
+        }
+    
+
+
+
+    </script>
+</body>
+
+</html>

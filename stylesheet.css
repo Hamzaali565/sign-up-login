@@ -1,0 +1,51 @@
+body{
+    background-color: gray;
+}
+.form{
+ margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 300px;
+    background-color: oldlace;
+}
+@media only screen and (max-width: 320px) {
+    input{
+      width:250px ;
+    }
+  }
+  @media only screen and (max-width: 274px) {
+    input {
+      width: 200px;
+    }
+  }
+p{
+    font-size: 18px;
+    font-weight: bold;
+}
+button{
+    padding: 17px;
+    border-radius: 13px;
+    border: 1px solid gray;
+    margin-left:108px;
+    background-color: darkgrey;
+    color: white;
+}
+.logHead{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 356px) {
+    .opo {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .opo {
+      font-size: 24px;
+    }
+  }
