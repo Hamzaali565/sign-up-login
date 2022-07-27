@@ -29,29 +29,7 @@
             </div>
         </form>
     </div>
-    <script>
-        function signup() {
-            let name = document.getElementById('name').value;
-            let email = document.getElementById('email').value;
-            let pass = document.getElementById('pass').value;
-            let gender = document.getElementById('gender').value;
-            let address = document.getElementById('address').value;
-            let city = document.getElementById('city').value;
-
-            let a = localStorage.setItem('name', name)
-            let b = localStorage.setItem('email', email)
-            let c = localStorage.setItem('pass', pass)
-            let d = localStorage.setItem('gender', gender)
-            let e = localStorage.setItem('address', address)
-            let f = localStorage.setItem('city', city)
-
-            window.location.href = "./login.html"
-        }
-    
-
-
-
-    </script>
+<script src="app.js"></script>
 </body>
 
 </html>

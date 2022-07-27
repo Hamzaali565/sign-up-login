@@ -11,38 +11,35 @@
 
 <body>
     <h1 class="logHead" style="margin-top: 150px;">Log-in Form </h1>
-    <div class="form" >
-<form onsubmit="login(); return false">
-    <div>
-        E-mail <p><input type="email" name="" id="email1"></p>
+    <div class="form">
+        <form onsubmit="login(); return false">
+            <div>
+                E-mail <p><input type="email" name="" id="login_email"></p>
+            </div>
+            <div>
+                Password <p><input type="password" name="" id="login_password"></p>
+            </div>
+            <div style="margin-left:20px;margin-top: 40px;"><Button>login</Button></div>
+        </form>
     </div>
-    <div>
-        Password <p><input type="password" name="" id="pass1"></p>
-    </div>
-    <div style="margin-left:20px;margin-top: 40px;"><Button>login</Button></div>
-</form>
-    </div>
-<script>
-    let sel =  localStorage.getItem("name");
-    alert(`Hi ${sel}! Your Account Has been Created \n Kindly Login to Continue.`)
-function login(){
-let email2= document.getElementById("email1").value;
-let pass2 = document.getElementById("pass1").value;
-     
-let email3= localStorage.getItem("email");
-let pass3= localStorage.getItem("pass");
- if (email2 === email3 && pass2===pass3){
-    window.location.href="./browser.html"
- }
- else{
-    alert('E-mail or Password is incorrect');
- }
-    
-    
-}
-</script>
+    <script src="app.js">
+        // let users = [];
+
+        // function login() {
+        //     let userInStringForm = localStorage.getItem("users");
+        //     users = JSON.parse(userInStringForm) || [];
+        //     console.log(users);
 
 
+        //     let login_email = document.getElementById('login_email').value;
+        //     let login_password = document.getElementById('login_password').value;
+
+        
+
+
+
+        // }
+    </script>
 </body>
 
 </html>
